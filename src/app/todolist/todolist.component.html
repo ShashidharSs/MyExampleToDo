@@ -1,0 +1,33 @@
+<div class="section">
+  <div class="col-md-12">
+      <div class="panel panel-primary">
+          <div class="panel-heading">s</div>
+          <div class="panel-body">
+  <div class="col-md-6">
+   
+    <div class="panel panel-primary">
+      <div class="panel-heading">Panel with panel-primary class</div>
+      <div class="panel-body">
+
+        <div class="form-group">
+          <input type="text" [(ngModel)]="goalText"/>
+          <input type="submit" class="btn btn-success" [value]="btnText" (click)="addItem()" />
+        </div>
+      </div>
+    </div>
+
+   
+  </div>
+  <div class="col-md-6">
+    <div class="panel panel-success">
+      <div class="panel-heading">To do list :- <b> {{itemCount}}</b> </div>
+      <div class="panel-body">
+        <li *ngFor="let goal of goals; let i=index">{{goal}} <i class="fa fa-close" (click)="removeItems(i)"></i></li>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</div>
+</div>
+</div>

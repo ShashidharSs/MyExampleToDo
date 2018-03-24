@@ -1,0 +1,10 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">To Do list Results <button class="btn btn-warning btn-xs pull-right" (click)="sendMeTodoList()">send Me ToDo list(Navigate)</button>  </div>
+    <div class="panel-body">
+      
+  <li *ngFor="let goal of goals">
+        {{goal}}
+      </li>
+
+    </div>
+  </div>
